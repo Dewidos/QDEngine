@@ -14,10 +14,12 @@ add_subdirectory(vendored/SDL EXCLUDE_FROM_ALL)
 # This assumes the SDL_image source is available in vendored/SDL_image
 add_subdirectory(vendored/SDL_image EXCLUDE_FROM_ALL)
 
+file(GLOB_RECURSE SOURCES "app/src/*.cpp")
+
 # Create your game executable target as usual
 add_executable(QDEngine WIN32
     app/main.cpp
-    app/src/Application.cpp
+    ${SOURCES}
 )
 
 target_include_directories(QDEngine PRIVATE app/include)
