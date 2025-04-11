@@ -4,6 +4,10 @@
 
 #include "Application.h"
 
+Application::~Application() {
+    SDL_Log("Goodbye!");
+}
+
 SDL_AppResult Application::loop(void *appstate)
 {
     const char *message = "Hello World!";
