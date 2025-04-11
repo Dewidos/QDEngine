@@ -1,8 +1,12 @@
 //
-// Created by dawid on 11.04.2025.
+// Created by QD on 11.04.2025.
 //
 
 #include <SDL3/SDL.h>
+#include <SDL3_image/SDL_image.h>
+#include <cmath>
+#include <cstdlib>
+
 
 #ifndef APPLICATION_H
 #define APPLICATION_H
