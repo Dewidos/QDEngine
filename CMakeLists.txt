@@ -15,7 +15,12 @@ add_subdirectory(vendored/SDL EXCLUDE_FROM_ALL)
 add_subdirectory(vendored/SDL_image EXCLUDE_FROM_ALL)
 
 # Create your game executable target as usual
-add_executable(QDEngine WIN32 main.cpp)
+add_executable(QDEngine WIN32
+    app/main.cpp
+    app/src/Application.cpp
+)
+
+target_include_directories(QDEngine PRIVATE app/include)
 
 # Link to the actual SDL3 library.
 target_link_libraries(QDEngine PRIVATE SDL3_image::SDL3_image SDL3::SDL3)
