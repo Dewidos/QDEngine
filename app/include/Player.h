@@ -15,10 +15,12 @@
 
 class Player {
 public:
-    Player(SDL_Window *window, SDL_Renderer *renderer) : window(window), renderer(renderer) {};
-    ~Player();
+  Player(SDL_Window *window, SDL_Renderer *renderer) : window(window), renderer(renderer) {};
+  ~Player();
 
-
+  SDL_FRect plrSourceRectFinal, plrDestinationRectFinal;
+  void getPlayerRectValues();
+  void setPlayerRectValues();
 
 private:
   SDL_Window *window;

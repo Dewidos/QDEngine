@@ -1,5 +1,5 @@
 //
-// Created by dawid on 11.04.2025.
+// Created by QD on 11.04.2025.
 //
 
 #include "Application.h"
